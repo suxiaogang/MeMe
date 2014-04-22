@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/meme/!svn/ver/2/1/SpeedPHP/Extensions
+END
+Services_JSON.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/meme/!svn/ver/2/1/SpeedPHP/Extensions/Services_JSON.php
+END
+spAcl.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/meme/!svn/ver/2/1/SpeedPHP/Extensions/spAcl.php
+END
+spUrlRewrite.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/meme/!svn/ver/2/1/SpeedPHP/Extensions/spUrlRewrite.php
+END
+spAccessCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/meme/!svn/ver/2/1/SpeedPHP/Extensions/spAccessCache.php
+END
