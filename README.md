@@ -1,5 +1,5 @@
 #### MeMe
-MeMe:a personal knowledge management webapp <img width="15px" src="http://meme.sinaapp.com/img/fav.png">
+<img width="14px" src="http://meme.sinaapp.com/img/fav.png"> MeMe : a personal knowledge management webapp
 
 You can just paste/record your ideas or sample words, website urls, images and code snippets to MeMe.
 
@@ -22,23 +22,27 @@ jquery.hammer.js
 ##### Snapshots:
 Ideas or just words:
 
-<img width="600px" src="http://ww3.sinaimg.cn/mw690/5fd37818tw1efuqj0cxa9j20go07atc0.jpg">
+<img width="600px" src="http://ww3.sinaimg.cn/large/5fd37818tw1efuqj0cxa9j20go07atc0.jpg">
 
 Full screen view:
 
-<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqiydrq1j20go08xdq5.jpg">
+<img width="600px" src="http://ww4.sinaimg.cn/large/5fd37818tw1efuqiydrq1j20go08xdq5.jpg">
 
 Code snippets:
 
-<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqitfof5j20go088wgh.jpg">
+<img width="600px" src="http://ww4.sinaimg.cn/large/5fd37818tw1efuqitfof5j20go088wgh.jpg">
 
 Code [full screen view]:
 
-<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiwmat5j20go0cfq5w.jpg">
+<img width="600px" src="http://ww4.sinaimg.cn/large/5fd37818tw1efuqy3b5hkj20ks0ge74p.jpg">
+
+Music:
+
+<img width="600px" src="http://ww4.sinaimg.cn/large/5fd37818tw1efuqy3b5tnj20go0983zq.jpg">
 
 Images:
 
-<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiuoiuvj20go06xgom.jpg">
+<img width="600px" src="http://ww1.sinaimg.cn/large/5fd37818tw1efuqiuoiuvj20go06xgom.jpg">
 
 ##### TODO:
 
