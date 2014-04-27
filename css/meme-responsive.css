@@ -1,0 +1,36 @@
+/* Only iPhone 4/4S (portrait mode) */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) 
+and (-webkit-device-pixel-ratio: 2) 
+and (device-aspect-ratio: 2/3) 
+and (orientation:portrait) {
+	 html {
+        -webkit-text-size-adjust: none;
+	 }
+    .container {
+		width: 100%;
+		margin: 0;
+	}
+	.container pre{
+		width: 90%;
+		height: 100%;
+		font-size: 90%;
+		margin:0;
+		padding: 50px 0px 50px 20px;
+		background: rgba(255, 255, 255, 1);
+	}
+	#nprogress .bar {
+		height: 4px;
+	}
+}
+
+/* Only iPhone 4/4S (landscape mode) */
+@media only screen 
+and (min-device-width: 320px)  
+and (max-device-width: 480px) 
+and (-webkit-device-pixel-ratio: 2) 
+and (device-aspect-ratio: 2/3) 
+and (orientation:landscape) {
+    
+}

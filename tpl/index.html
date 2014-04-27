@@ -1,17 +1,45 @@
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hi MeMe</title>
+<title>Hi MeMe~</title>
 <meta name="author" content="Sam Su">
 <meta name="keywords" content="MeMe">
 <meta name="description" content="MeMe">
-<link rel="shortcut icon" type="image/x-icon" href="/img/fav.png">
-<link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
+<meta property="wb:webmaster" content="c2c1ad75148dcd35"/>
+<link rel="apple-touch-icon" href="/img/fav.png"/>
+<link rel="shortcut icon" href="/img/fav.png" type="image/png"/>
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="/css/player.css"/>
-<link type="text/css" rel="stylesheet" href="/css/index.css">
+<link type="text/css" rel="stylesheet" href="/css/prettify.css"/>
+<link rel="stylesheet" type="text/css" href="/css/prettify-Bootstrap-light.css"/>
+<link rel="stylesheet" type="text/css" href="/css/nprogress.css"/>
+<link type="text/css" rel="stylesheet" href="/css/index.css"/>
 <!--DUI music player -->
 <script type="text/javascript" src="/js/audio.js"></script>
 <script type="text/javascript" src="/js/player.js"></script>
+<!--
+	//http://open.weibo.com/wiki/Weibo-JS_V2
+	//http://jssdk.sinaapp.com/demo/button/loginButton.php
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1720190575" type="text/javascript" charset="utf-8"></script>
+	<script>
+	WB2.anyWhere(function(W){
+			W.widget.connectButton({
+				id: "wb_connect_btn",	
+				type:'7,2',
+				callback : {
+					login:function(o){	//登录后的回调函数
+						alert("login: "+o.screen_name)	
+					},
+					logout:function(){	//退出后的回调函数
+						alert('logout');
+					}
+				}
+			});
+		});
+	</script>
+
+-->
 </head>
 <!--
 // 1.Website
@@ -24,7 +52,7 @@
 <div class="navbar-inner">
 <div class="container">
 	<div class="navbar-text pull-right">
-	<a href="/login">登录</a> | <a href="/register">注册</a>
+		<a href="/login">登录</a> | <a href="/register">注册</a>
 	</div>
 </div>
 </div>
@@ -37,10 +65,12 @@
 		<a class="close-reveal-modal">&#215;</a>
 		<h3>MeMe</h3><br><br>
 		<p>
-		* 点击"+"号,可以发表你的任何想法(文字片段),代码片段,音乐或者网址的外链.<br>
+		* 点击"+"号,可以发表你的任何想法(文字片段),代码片段,音乐或者网址的外链.(目前不需要登陆,也不支持注册)<br>
 		* 长按序号可选择删除已经发表的东西.<br>
-		* 目前是面向个人使用,搭建在SAE上,很多功能没有写完.<br>
-		* 我正在工作之余抽空学习PHP和一些前端技术,如果你感兴趣,可以在GitHub上<a href="https://github.com/Suxiaogang/MeMe" target="_blank">STAR/FORK</a>这个Repo.<br>
+		* 代码片段可以通过点击右侧的<span><i class="icon-bookmark" style="margin:1px 0 0 0;"></i></span>图标在新窗口中全屏预览.<br>
+		* 文字片段可以通过点击右侧的<span><i class="icon-fullscreen" style="margin:1px 0 0 0;"></i></span>图标在新窗口中全屏预览.<br>
+		* 目前仅面向个人使用,搭建在SAE的Nginx上,很多功能没有写.<br>
+		* 正在工作之余抽空学习各种脚本语言和一些前端技术,如果你感兴趣,可以在GitHub上<a href="https://github.com/Suxiaogang/MeMe" target="_blank">Star/Fork</a>这个Repo.<br>
 		</p>
 	</div>
 	
@@ -66,7 +96,7 @@
 		<input type="radio" name="type" id="optionsRadios4" value="4"> Code
 		<hr>
 			<input type="text" class="input-xxlarge" name="title" style="display:none">
-			<textarea id="some-textarea" name="content" placeholder="type something in your mind..." style="width:100%;height:250px;margin-top:10px;resize:none;"></textarea>
+			<textarea id="some-textarea" name="content" placeholder="type something in your mind..."></textarea>
 			<button type="submit" class="btn btn-mini btn-primary pull-right" style="margin-top:10px">Add</button>
 		</form>
 
@@ -82,20 +112,10 @@
 					<div class="postinfo">
 						<span class="badge badge-error nofinish" value="[{$one.tid}]">[{$one@iteration}]</span>
 						<span class="time">[{$one.time}] <i class="icon-map-marker"></i> 
-							<span class="tooltip-test" title="[{$one.useragent}]">[{$one.userip}]</span>
+							<span class="tooltip-test" title="[{$one.useragent}]">
+								[{$one.usercity}] [<a class="ipLink" href="http://ip.taobao.com/ipSearch.php?ipAddr=[{$one.userip}]" target="_blank">[{$one.userip}]</a>]
+							</span>
 						</span>
-						<div class="btn-group pull-right">
-								<!--
-								<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">选择 
-								<span class="caret"></span></button>
-								<ul class="dropdown-menu">
-								  <li><a href="#"><i class="icon-star"></i> 收藏</a></li>
-								  <li><a href="#"><i class="icon-edit"></i> 拷贝链接地址</a></li>
-								  <li class="divider"></li>
-								  <li><a href="[{$one.content}]" target="_blank"><i class="icon-bookmark"></i> 分享到新浪微博</a></li>
-								</ul>
-								-->
-						</div>
 					</div>
 					<div class="contentWords">
 					<strong><i class="icon-globe"></i> &nbsp;
@@ -108,7 +128,9 @@
 					<div class="postinfo">
 						<span class="badge badge-error nofinish" value="[{$one.tid}]">[{$one@iteration}]</span>
 						<span class="time">[{$one.time}] <i class="icon-map-marker"></i>
-							<span class="tooltip-test" title="[{$one.useragent}]">[{$one.userip}]</span>
+							<span class="tooltip-test" title="[{$one.useragent}]">
+								[{$one.usercity}] [<a class="ipLink" href="http://ip.taobao.com/ipSearch.php?ipAddr=[{$one.userip}]" target="_blank">[{$one.userip}]</a>]
+							</span>
 						</span>
 					</div>
 					<div class="duiMusic" id="audio[{$one.tid}]">
@@ -138,11 +160,21 @@
 					<div class="postinfo">
 						<span class="badge badge-error nofinish" value="[{$one.tid}]">[{$one@iteration}]</span>
 						<span class="time">[{$one.time}] <i class="icon-map-marker"></i>
-							<span class="tooltip-test" title="[{$one.useragent}]">[{$one.userip}]</span>
+							<span class="tooltip-test" title="[{$one.useragent}]">
+								[{$one.usercity}] [<a class="ipLink" href="http://ip.taobao.com/ipSearch.php?ipAddr=[{$one.userip}]" target="_blank">[{$one.userip}]</a>]
+							</span>
+						</span>
+						<span class="pull-right">
+							<!--
+							<i class="icon-fullscreen" title="view article" onclick="viewArticle([{$one.tid}]);"></i>
+							-->
+							[{isImageStr url=$one.content tid=$one.tid}]
 						</span>
 					</div>
 					<div class="contentWords">
-						<blockquote><pre>[{$one.content}]<pre></blockquote>
+						<blockquote>
+						<pre>[{echoContent url=$one.content tid=$one.tid}]</pre>
+						</blockquote>
 					</div>
 					</li>
 					[{/if}]
@@ -152,14 +184,16 @@
 					<div class="postinfo">
 						<span class="badge badge-error nofinish" value="[{$one.tid}]">[{$one@iteration}]</span>
 						<span class="time">[{$one.time}] <i class="icon-map-marker"></i>
-							<span class="tooltip-test" title="[{$one.useragent}]">[{$one.userip}]</span>
+							<span class="tooltip-test" title="[{$one.useragent}]">
+								[{$one.usercity}] [<a class="ipLink" href="http://ip.taobao.com/ipSearch.php?ipAddr=[{$one.userip}]" target="_blank">[{$one.userip}]</a>]
+							</span>
 						</span>
 						<span class="pull-right">
-							<i class="icon-bookmark" onclick="viewRawCode([{$one.tid}]);"></i>
+							<i class="icon-bookmark" title="view raw" onclick="viewRawCode([{$one.tid}]);"></i>
 						</span>
 					</div>
 					<div class="contentWords">
-						<pre class="pre-scrollable">[{$one.content}]</pre>
+						<pre class="pre-scrollable prettyprint">[{$one.content}]</pre>
 					</div>
 					</li>
 					[{/if}]
@@ -184,10 +218,26 @@
 <script type="text/javascript" src="/js/jquery.hammer-full.min.js"></script>
 <script type="text/javascript" src="/js/jquery.reveal.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<!--
-<script type="text/javascript" src="/js/wysihtml5-0.3.0.js"></script>
-<script type="text/javascript" src="/js/bootstrap-wysihtml5.js"></script>
--->
+<script type="text/javascript" src="/js/prettify.js"></script>
+<script type="text/javascript" src="/js/nprogress.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
+<script>
+    // Show the progress bar 
+    NProgress.start();
+
+    // Increase randomly
+    var interval = setInterval(function() { NProgress.inc(); }, 1500);        
+
+    // Trigger finish when page fully loaded
+    jQuery(window).load(function () {
+        clearInterval(interval);
+        NProgress.done();
+    });
+
+    // Trigger bar when exiting the page
+    jQuery(window).unload(function () {
+        NProgress.start();
+    });
+</script>
 </body>
 </html>

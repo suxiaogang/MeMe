@@ -31,11 +31,21 @@ TEXT SELECTION STYLES
 }
 /****CHROME****/
 
-
 body {
 	padding-top: 60px;
 	font-size:12px;
 	background-color:#EEE; 
+}
+.img-rounded {
+	width:400px;
+	box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.2);
+	padding: 1px;
+	background: rgba(255, 245, 255, 0.7);
+	opacity:0.8;
+}
+.img-rounded:hover{
+	box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.6);
+	opacity:1;
 }
 a:hover {
 	color: #4096EE;
@@ -62,13 +72,14 @@ a:hover {
 .icon-download-alt:hover{
 	opacity:0.8;
 }
-.icon-bookmark{
-	opacity:0.1;
-	margin-top: 10px;
+.icon-bookmark, .icon-fullscreen{
+	opacity:0.2;
+	margin-top: 5px;
+	margin-right: 5px;
 	cursor:pointer;
 }
-.icon-bookmark:hover{
-	opacity:0.9;
+.icon-bookmark:hover,.icon-fullscreen:hover{
+	opacity:0.6;
 }
 .hero-unit{
 	font-size:12px;
@@ -84,11 +95,18 @@ a:hover {
 .hero-unit a:hover{
 	color:#4096EE;
 }
-.navbar-inner {
+.ipLink{
+	color: #BABABA;
+}
+a.ipLink:hover{
+	color: #BABABA;
+}
+a.navbar-inner {
 	background-color: #1b1b1b;
 }
 .container{
-	width:68%;
+	/* this make bootstrap.css >  .navbar-fixed-bottom.container {margin-right:15%;} */
+	width:70%;
 	font-size:12px;
 	color:#999;
 }
@@ -143,16 +161,29 @@ button.close{
 input.input-xxlarge{
 	height:40px;
 	font-size:15px;
-	padding-left:15px;
+	padding-left:2%;
+	font-size: 14px;
+	font-weight:bold;
 }
 #some-textarea{
-	padding:15px;
+	width:96%;
+	height:200px;
+	margin-top:10px;
+	resize:none;
+	font-size: 14px;
+	font-weight:bold;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:2%;
+	padding-right:2%;
 	overflow-x:hidden;
 	overflow-y:hidden;
+	color:#888;
 }
 #some-textarea::-webkit-input-placeholder,.input-xxlarge::-webkit-input-placeholder{
+	font-size:14px;
     color:#CCC;
-	opacity:0.5;
+	opacity:0.4;
 }
 /**** textarea scroll-bar ****/
 pre::-webkit-scrollbar-track-piece,.pre-scrollable::-webkit-scrollbar-track-piece{ 
@@ -175,18 +206,37 @@ pre::-webkit-scrollbar-thumb:hover,.pre-scrollable::-webkit-scrollbar-thumb:hove
 	line-height: 1.4;
 	overflow-x: auto;
 	background-color: #f7f7f9;
-	padding: 2px 8px;
+	padding: 8px 8px;
 	color:#008080;
-	opacity:0.8;
 }
 .pre-scrollable:hover{
 	color:#005757;
 	opacity:1;
 }
+
+/* Specify class=linenums on a pre to get line numbering */ 
+.prettyprint.linenums {  
+	-webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;  
+	-moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;  
+	box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;  
+}  
+ol.linenums {  
+	margin: 0 0 0 33px; /* IE indents via margin-left */  
+}   
+ol.linenums li {  
+	padding-left: 12px;  
+	color: #bebec5;  
+	line-height: 18px;  
+	text-shadow: 0 1px 0 #fff;  
+}
+/* Specify class=linenums on a pre to get line numbering */
 pre{
+	font-family: Consolas,Courier,Courier New,monospace,serif;
 	max-height: 340px;
 	overflow-y: auto;
 	padding-right:10px;
+	line-height: 1.4;
+	padding: 9.5px 0 9.5px 0;
 	color:#888;
 }
 pre:hover{

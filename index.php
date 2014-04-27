@@ -55,5 +55,8 @@ $spConfig = array(
 	
 	'dispatcher_error' => "import(APP_PATH.'/404.html');exit();",
 );
+
 require(SP_PATH."/SpeedPHP.php");
+import(APP_PATH."/include/functions.php");
+
 spRun();

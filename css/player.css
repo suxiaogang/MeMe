@@ -20,7 +20,7 @@ a:hover { color: #fff; background: #369 }
 	color: #999;
 }
 .db-player .range { 
-	position: absolute; top: 25px; left: 38px; 
+	position: absolute; top: 24px; left: 38px; 
 	font-size: 0; color: #beeabc; width: 260px; height: 5px; background: #beeabc; border: 1px solid #d6d6d6;
     -webkit-border-radius: 5px;
     -webkit-appearance: none !important

@@ -7,6 +7,7 @@
 <meta name="description" content="MeMe">
 <link rel="apple-touch-icon" href="/img/fav.png"/>
 <link rel="shortcut icon" href="/img/code.png" type="image/png"/>
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="/css/prettify.css"/>
 <link rel="stylesheet" type="text/css" href="/css/prettify-Bootstrap-light.css"/>
 <style>
@@ -28,9 +29,13 @@ pre.prettyprint{
 </style>
 </head>
 <body>
-<pre class="prettyprint">[{$result.content}]</pre>
+<pre class="prettyprint linenums">[{$result.content}]</pre>
 <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/prettify.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<script>
+$(function(){
+	prettyPrint();
+});
+</script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 $(function(){
+	prettyPrint();
 	$(".close").click(closeWindow);
 	$(".showWell").click(showWell);
 	changeRadio();
@@ -16,11 +17,11 @@ $(function(){
 	*/
 
     $('#hero-unit').hammer({
-			hold_timeout: 1500
+			hold_timeout: 5000
 		}).on("hold", '.nofinish', function(event) {
 			var $e = $(this);
 			var $p = $(this).parent();
-			if(confirm('Are you sure to DELETE it Permanently?')){
+			if(confirm('Are you sure to delete it permanently?')){
 				$p.parent().slideUp(300);
 				$.get('/main/delete', 'tid=' + $e.attr('value'));
 			}
@@ -40,14 +41,14 @@ function changeRadio(){
 			$(".input-xxlarge").slideDown("fast");
 			$("#some-textarea").css("height","50px");
 			$(".input-xxlarge").attr("placeholder","Artist - Track");
-			$("#some-textarea").attr("placeholder","paste music url/Xiami page link here...");
+			$("#some-textarea").attr("placeholder","paste music MP3 url page link here...");
 		} else if(test == 3) {
 			$(".input-xxlarge").slideUp("fast");
-			$("#some-textarea").css("height","250px");
+			$("#some-textarea").css("height","200px");
 			$("#some-textarea").attr("placeholder","type something in your mind...");
 		} else if(test == 4) {
 			$(".input-xxlarge").slideUp("fast");
-			$("#some-textarea").css("height","250px");
+			$("#some-textarea").css("height","200px");
 			$("#some-textarea").attr("placeholder","write or paste code snippets here...");
 		}
     });
@@ -73,4 +74,12 @@ function showWell(){
 
 function viewRawCode(param){
 	window.open("/main/viewCode?tid="+param)
+}
+
+function viewImage(param){
+	window.open("/main/viewImage?tid="+param)
+}
+
+function viewArticle(param){
+	window.open("/main/viewArticle?tid="+param)
 }
