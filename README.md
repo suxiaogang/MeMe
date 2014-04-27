@@ -1,44 +1,48 @@
 #### MeMe
-MeMe:a personal knowledge management webapp
+MeMe:a personal knowledge management webapp <img width="15px" src="http://meme.sinaapp.com/img/fav.png">
 
-<img width="25px" src="http://meme.sinaapp.com/img/fav.png">
+You can just paste/record your ideas or sample words, website urls, images and code snippets to MeMe.
 
-References;
+Currently MeMe is running on sina SAE, and it's easy to install.
+
+References:
 ```
+
 PHP + MySQl
-
 Nginx
-
 Twitter Bootstrap
-
 google code prettify
-
 NProgress
-
 jQuery
-
 jquery.reveal.js
-
 jquery.hammer.js
 
 ```
 
 ##### Snapshots:
 Ideas or just words:
-<img width="600px" src="http://ww3.sinaimg.cn/mw690/5fd37818tw1efuqj0cxa9j20go07atc0.jpg">
-Full screen view:
-<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqiydrq1j20go08xdq5.jpg">
-Code snippets:
-<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqitfof5j20go088wgh.jpg">
-Code [full screen view]
-<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiwmat5j20go0cfq5w.jpg">
-Images:
-<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiuoiuvj20go06xgom.jpg">
 
+<img width="600px" src="http://ww3.sinaimg.cn/mw690/5fd37818tw1efuqj0cxa9j20go07atc0.jpg">
+
+Full screen view:
+
+<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqiydrq1j20go08xdq5.jpg">
+
+Code snippets:
+
+<img width="600px" src="http://ww4.sinaimg.cn/mw690/5fd37818tw1efuqitfof5j20go088wgh.jpg">
+
+Code [full screen view]:
+
+<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiwmat5j20go0cfq5w.jpg">
+
+Images:
+
+<img width="600px" src="http://ww1.sinaimg.cn/mw690/5fd37818tw1efuqiuoiuvj20go06xgom.jpg">
 
 ##### TODO:
 
-* Reg / login
+* Register / (social)login
 * more features...
 
 ##### Contact:
